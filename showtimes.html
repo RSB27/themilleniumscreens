@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Times | The Millennium Screens</title>
+    <link rel="stylesheet" href="styles.css">
+		  <link rel="icon" type="image/x-icon" href="tmslogoFULL.png">
+    <style>
+        body {
+            background-color: #454547;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #C1A05D;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .logo-container {
+            flex-shrink: 0;
+        }
+        .logo {
+            height: 50px; 
+        }
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .showtimes {
+            margin: 40px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .movie {
+            background: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .movie img {
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .movie h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .showtime {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+  <div class="logo-container">
+    <a href="index.html">
+        <img src="tmslogo.png" alt="The Millennium Screens Logo" class="logo">
+    </a>
+</div>
+        <nav>
+            <ul>
+                <li><a href="showtimes.html">SHOW TIMES</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to The Millennium Screens</h1>
+        <p>Enjoy the best movies with us!</p>
+    </section>
+    
+    <main>
+        <section class="showtimes">
+            <h1>Now Showing for the 2nd week of March!</h1>
+            
+ <div class="movie">
+    <a href="https://www.imdb.com/title/tt0120382/">
+        <img src="movie1.png" alt="The Truman Show Poster" width="120" height="180">
+    </a>
+    <div>
+        <h2>The Truman Show</h2>
+        <p class="showtime">THEATRE 1</p>
+        <p class="showtime">8:00 AM - 9:00 AM</p>
+        <p class="showtime">12:00 PM - 1:00 PM</p>
+        <p class="showtime">6:00 PM - 7:00 PM</p>
+    </div>
+</div>
+
+<div class="movie">
+    <a href="https://www.imdb.com/title/tt0107290/">
+        <img src="movie2.png" alt="Jurassic Park Poster" width="120" height="180">
+    </a>
+    <div>
+        <h2>Jurassic Park</h2>
+        <p class="showtime">THEATRE 2</p>
+        <p class="showtime">9:30 AM - 10:30 AM</p>
+        <p class="showtime">1:30 PM - 2:30 PM</p>
+        <p class="showtime">7:30 PM - 8:30 PM</p>
+    </div>
+</div>
+
+<div class="movie">
+    <a href="https://www.imdb.com/title/tt0133093/">
+        <img src="movie3.png" alt="The Matrix Poster" width="120" height="180">
+    </a>
+    <div>
+        <h2>The Matrix</h2>
+        <p class="showtime">THEATRE 3</p>
+        <p class="showtime">10:00 AM - 11:00 AM</p>
+        <p class="showtime">3:00 PM - 4:00 PM</p>
+        <p class="showtime">9:00 PM - 10:00 PM</p>
+    </div>
+</div>
+
+        </section>
+    </main>
+</body>
+</html>

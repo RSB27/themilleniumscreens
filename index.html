@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Millennium Screens</title>
+    <link rel="stylesheet" href="styles.css">
+	  <link rel="icon" type="image/x-icon" href="tmslogoFULL.png">
+</head>
+
+ <style>
+
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+
+        .hero img {
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .survey {
+            background-color: #333;
+            padding: 30px;
+            width: 60%;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        .survey h2 {
+            color: #C1A05D;
+        }
+
+        .survey form {
+            text-align: left;
+        }
+
+        .survey p {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        textarea, select, input[type="radio"] {
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #C1A05D;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #C1A05D;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #C1A05D;
+            color: #111;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="tmslogo.png" alt="The Millennium Screens Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="showtimes.html">SHOW TIMES</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  <main>
+        <section class="hero">
+            <h1>Welcome to The Millennium Screens</h1>
+            <p>Experience the best classic movies from the 90s and 2000s!</p>
+        </section>
+
+        <section class="survey">
+            <h2>We value your feedback?</h2>
+            <form action="mailto:tmstheatre@gmail.com" method="POST" enctype="text/plain">
+                <p>How satisfied are you with our cinema experience?</p>
+                <label><input type="radio" name="satisfaction" value="very_satisfied"> Very Satisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label><br>
+                <label><input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="very_unsatisfied"> Very Unsatisfied</label><br>
+
+                <p>Any additional comments? Movie Suggestions?</p>
+                <textarea name="comments" rows="4" placeholder="Additionls Here"></textarea><br>
+
+                <p>Which movie genre do you prefer?</p>
+                <select name="genre">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                </select><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

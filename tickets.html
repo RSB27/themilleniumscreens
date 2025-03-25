@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets | The Millennium Screens</title>
+    <link rel="stylesheet" href="styles.css">
+		  <link rel="icon" type="image/x-icon" href="tmslogoFULL.png">
+    <style>
+        body {
+            background-color: #454547;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #C1A05D;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .logo-container {
+            flex-shrink: 0;
+        }
+        .logo {
+            height: 50px; 
+        }
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .showtimes {
+            margin: 40px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .movie {
+            background: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .movie img {
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .movie h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .showtime {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+        .tickets table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            background: #333;
+            color: white;
+        }
+        .tickets th, .tickets td {
+            padding: 10px;
+            border: 1px solid #C1A05D;
+        }
+        .tickets th {
+            background: #C1A05D;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+  <div class="logo-container">
+    <a href="index.html">
+        <img src="tmslogo.png" alt="The Millennium Screens Logo" class="logo">
+    </a>
+</div>
+        <nav>
+            <ul>
+                <li><a href="showtimes.html">SHOW TIMES</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+                <li><a href="locations.html">LOCATIONS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Ticket Prices</h1>
+        <p>Purchase in theatre.</p>
+    </section>
+    
+        <section class="tickets">
+		<center>
+            <h1>Ticket Pricing</h1>
+			<center />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Price</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kids Ticket</td>
+                        <td>$5.99</td>
+                        <td>Valid for all PG movies, 12 & Below.</td>
+                    </tr>
+                    <tr>
+                        <td>Adult Ticket</td>
+                        <td>$8.99</td>
+                        <td>Valid for all movies</td>
+                    </tr>
+                    <tr>
+                        <td>Golden Ticket</td>
+                        <td>$14.99</td>
+                        <td>Includes entry for ticket holder + 1 guest</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
